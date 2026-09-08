@@ -1,18 +1,20 @@
 # Domain-Coref
 
-Domain-Coref is a multi-domain Chinese identity-coreference resource covering
-personal pronouns, demonstratives, definite noun phrases, zero anaphora, and
-event reference.
+Domain-Coref is a multi-domain Chinese identity-coreference resource
+covering personal pronouns, demonstratives, definite noun phrases,
+zero anaphora, and event reference.
 
-This repository contains the processing, validation, conversion, and
-evaluation utilities associated with the Domain-Coref Data Descriptor.
+This repository provides the custom code used to generate, validate,
+convert, split, and package the Domain-Coref dataset.
 
-## Evaluation
+## Code structure
 
-- `evaluation/zh_span/`: gold-mention and span-based coreference evaluation.
-- `evaluation/zero_pronoun/`: zero-pronoun evaluation and diagnostic analyses.
-- `evaluation/event_coreference/`: controlled event-coreference evaluation.
+- `generation/`: candidate-data generation utilities.
+- `validation/`: corpus integrity and annotation validation.
+- `conversion/`: conversion to the released representations.
+- `splitting/`: fixed document split utilities.
+- `release/`: construction and validation of the public release.
 
 ## Data
 
-The Domain-Coref dataset is distributed separately through Zenodo.
+The frozen Domain-Coref dataset is distributed separately through Zenodo.

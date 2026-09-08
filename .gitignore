@@ -1,0 +1,42 @@
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Models and checkpoints
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.h5
+checkpoints/
+models/
+
+# Data
+data/
+datasets/
+*.conll
+*.jsonl
+
+# Experimental outputs
+pred/
+predictions/
+results/
+logs/
+cache/
+tmp/
+wandb/
+tensorboard/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
